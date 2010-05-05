@@ -1,0 +1,12 @@
+Returns the previous url_title of in the same category:
+{exp:category_nav:previous this_title="{url_title}" category_id = "4"}
+
+Returns the next url_title of in the same category:
+{exp:category_nav:next this_title="{url_title}" category_id = "4"}
+
+Comparisons:
+{if	"{exp:category_nav:next this_title="{url_title}" category_id = "4"}" != ""}
+	{exp:category_nav:next this_title="{url_title}" category_id = "4"}
+{if:else}
+	No more entries
+{/if}
